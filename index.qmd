@@ -1,0 +1,336 @@
+---
+title: "Git, Github and Markdown"
+subtitle: "Trinity for Economists"
+author: "[anarinsk](https://github.com/anarinsk/lec_git-github-markdown/)"
+date: "2022-07-29"
+format: 
+    revealjs:
+        incremental: true   
+        theme: black
+        css: "index.css"
+        transition: concave
+        background-transition: fade
+        smaller: false
+        scrollable: true
+        logo: ""
+        footer: "KNU Summer Special Tutorial"
+        #self-contained: true
+---
+
+# 시작하기에 앞서 
+
+## 목적과 동기의 호응 {background-color="black" background-image="https://25.media.tumblr.com/fc175d258e3109a3fa0a038ef4e577a4/tumblr_mj8tdt5Qxn1rmhlw7o1_r1_500.gif" background-size="cover" background-repeat="center" background-opacity="0.5"}
+
+"서로 뭘 하는지 목적을 맞춰야 뭐 하나라도 건질 수 있겠죠?"
+
+## 오늘 튜토리얼의 목적 
+
+1. Git이 왜 중요한지 알아간다. 
+2. Github 계정을 만들고 최초의 `commit`, `push`, `pull`을 해본다.  
+3. Markdown으로 문서를 작성해본다. 
+
+## 좀 더 욕심을 내보자면...
+
+- Github 위에 블로그 만들기 
+- 그리고 
+
+## 좀 더 욕심을 내보자면...{background-color="black" background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" background-size="cover" background-repeat="none" background-opacity="0.2" transition="none" background-transition="zoom" transition-speed="slow"}
+
+:::{.nonincremental}
+- Github 위에 블로그 만들기 
+- 그리고 
+:::
+
+
+# Git 
+
+
+## It's Timeline {background-iframe="https://www.youtube.com/embed/VgxuSclbCjA" background-interactive='true'}
+
+## History 
+
+- Linus Tobals 
+
+## 해장술은 필요한가?
+
+- 필요하다면 주종은? 
+- 해장술에 어울리는 안주는?
+- 국물이 필요한가?
+
+. . . 
+
+`p`의 텍스트가 `ul`, `ol`의 텍스트와 달라 보이나요? 
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+# How to add Footnote
+
+## Footnote 
+
+:::{ .nonincremental }
+- Green ^[A footnote]
+- Brown
+- Purple
+- 한글과 조화롭나요? 
+:::
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+# Testing Increamental 
+
+## Incremental activated 
+
+::: {.incremental}
+- Eat spaghetti
+- Drink wine
+:::
+
+## Inscremental deactivated
+
+::: {.nonincremental}
+- Eat spaghetti
+- Drink wine
+:::
+
+# Testing Pause 
+
+## Slide with a pause
+
+content before the pause
+
+. . .
+
+content after the pause
+
+# Multicolumn 
+
+## Example 
+::::: { .nonincremental }
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+
+- This is left column.
+- 40% is allocated. 
+:::
+
+::: {.column width="60%"}
+Right column
+
+- 이쪽은 오른쪽 열입니다. 
+- 60%가 할당되어 있지요! 
+:::
+
+::::
+
+:::::
+
+# Cotents Overflow 
+
+## Page w/o `{.smaller}`
+
+- This is normal 
+- 이게 보통 크기 
+
+## Page w `{.smaller}` { .smaller }
+
+- This is smaller 
+- 이게 작은 크기 
+
+## 스크롤이 가능한 슬라이드 {.scrollable}
+
+:::{ .nonincremental}
+- Bullet number 1
+- Bullet number 2
+- Bullet number 3
+- Bullet number 4
+- Bullet number 5
+- Bullet number 6
+- Bullet number 7 
+- 총알 넘버 8 
+- 총알 넘버 9
+- 총알 넘버 10
+- 총알 넘버 11
+- 총알 넘버 12
+:::
+
+# How to apply fonts
+
+## sample css { .smaller }
+
+:::{ .nonincremental }
+- `.qmd` 파일과 같은 위치에 `.css` 파일을 두고, 문서 앞의 YAML에서 해당 파일을 로드하면 된다. 
+- 폰트를 로딩하고 적용하는 방법은 대체로 비슷하다. 이 문서에 적용된 `testflight.scss`를 보자. 
+    - 2-4 번 라인이 폰트를 입력하는 명령이다. 
+    - 나머지 아래는 각 양식 별로 폰트와 크기를 지정한다. 
+:::
+
+```{.css code-line-numbers=2-4}
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url("https://cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-subset.css");
+
+/*-- scss:rules --*/
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+  font-family: 'NanumSquare' !important;
+  //text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+}
+
+.reveal section p {
+    font-family: 'pretendard' !important;
+    font-size: 90%;
+}
+
+.reveal ul, 
+.reveal li, 
+.reveal ol{
+    font-family: 'pretendard' !important;
+    font-size: 95%;
+}
+```
+
+# Tabsets 
+
+## 탭셋을 적용해보자. 
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A` 
+
+봉준호가 깐느봉일까요?
+
+### Tab B
+
+Content for `Tab B`
+
+박찬욱이 깐느박일까요? 
+
+:::
+
+# $\rm\LaTeX$ 테스트 
+
+## 수식 표현을 테스트합니다.
+$$
+\begin{aligned}
+  \dot{x} & = \sigma(y-x) \\
+  \dot{y} & = \rho x - y - xz \\
+  \dot{z} & = -\beta z + xy
+\end{aligned} 
+$$
+
+
+$$
+   \begin{bmatrix}
+                1 & x & 0 \\
+                0 & 1 & -1
+        \end{bmatrix}\begin{bmatrix}
+                1  \\
+                y  \\
+                1
+        \end{bmatrix}
+        =\begin{bmatrix}
+                1+xy  \\
+                y-1
+        \end{bmatrix}.
+$$
+
+인라인 수식은 잘 들어갑니꽈? $y_i = \alpha + \beta x_i$는 회귀방정식이얌~ 
+
+## 수식 표현을 테스트합니다. (`.smaller`) { .smaller }
+
+$$
+\begin{aligned}
+  \dot{x} & = \sigma(y-x) \\
+  \dot{y} & = \rho x - y - xz \\
+  \dot{z} & = -\beta z + xy
+\end{aligned} 
+$$
+
+
+$$
+   \begin{bmatrix}
+                1 & x & 0 \\
+                0 & 1 & -1
+        \end{bmatrix}\begin{bmatrix}
+                1  \\
+                y  \\
+                1
+        \end{bmatrix}
+        =\begin{bmatrix}
+                1+xy  \\
+                y-1
+        \end{bmatrix}.
+$$
+
+인라인 수식은 잘 들어갑니꽈? $y_i = \alpha + \beta x_i$는 회귀방정식이얌~ 
+
+# How to change background 
+
+## Slide, aquamarine {background-color="aquamarine"}
+
+This changes color of background! 
+
+## 크기 지정 벽지 {background-color="black" background-image="https://www.comicbasics.com/wp-content/uploads/2020/01/Top-10-Marvel-Superheroes-That-Have-Doctorates-678x381.jpg" background-size="300px" background-repeat="repeat" background-opacity="0.5"}
+
+This slide's background image will be sized to 100px and repeated.
+
+
+## 꽉찬 벽지 {background-color="black" background-image="https://www.comicbasics.com/wp-content/uploads/2020/01/Top-10-Marvel-Superheroes-That-Have-Doctorates-678x381.jpg" background-size="cover" background-repeat="repeat" background-opacity="0.5"}
+
+:::{style="color: yellow;"}
+This slide's background image fits the screen.
+:::
+
+- Font color is changed locally. 
+
+## {background-color="aquamarine"}
+
+(A slide with no title)
+
+## {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat" background-opacity="0.5"}
+
+(Another slide with no title)
+
+# How to use code 
+
+## Use env 
+
+- 코드를 실행하기 위해서는 환경을 쓰는 게 좋다. 
+- python의 env를 쓰든 conda env를 쓰든 필요한 것을 쓰자. 
+- Code Extension이 아직까지 환경을 제대로 지원하지 않는다. 
+  - 실행용 코드가 들어간 경우 렌더링은 터미날에서 직접 실행하자. 
+
+. . .
+
+```bash 
+? quarto render {YOUR-FILE.qmd}
+```
+
+# End of Document
