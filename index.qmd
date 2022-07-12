@@ -1,7 +1,7 @@
 ---
 title: "Git, Github and Markdown"
 subtitle: "Trinity for Economists"
-author: "[anarinsk](https://github.com/anarinsk/lec_git-github-markdown/)"
+author: "[Junsok Huhh](https://github.com/anarinsk/lec_git-github-markdown/)"
 date: "2022-07-29"
 format: 
     revealjs:
@@ -73,6 +73,7 @@ format:
 :::
 
 ::: {.column width="60%"}
+::: {.nonincremental}
 - Git은 리눅스의 개발 과정에서 탄생했다. 
   - Open Source의 특성상 개발 이력 관리가 필요 
   - 이른바 VCS를 의도하지 않게 혁신 
@@ -82,6 +83,7 @@ format:
 - 협업의 기술적 기초 
   - 좋은 도구는 협업의 효율성과 가능성을 넓힌다. 
   - Git은 현재 표준적인 협업 도구 
+:::
 :::
 
 ::::
@@ -110,12 +112,19 @@ format:
 
 ## Add, Commit, Push, Pull
 
-![](https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG){fig-align="center"}
+<br>
 
-## Going to sleep
+![](https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG){.absolute top=150 left=120 right=10 width="800" height="500"}
 
-- Get in bed
-- Count sheep
+
+
+## 여러분의 버전 관리는 아마도...
+
+. . .
+
+![](https://backlog.com/git-tutorial/kr/img/post/intro/capture_intro1_1_1.png){.absolute top=200 left=100 width="800" height="400"}
+
+## Add & Commit 
 
 # How to add Footnote
 
