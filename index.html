@@ -7,7 +7,7 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.640">
+  <meta name="generator" content="quarto-0.9.598">
 
   <meta name="author" content="anarinsk">
   <meta name="dcterms.date" content="2022-07-29">
@@ -397,79 +397,129 @@
 <h1>시작하기에 앞서</h1>
 
 </section>
-<section id="목적과-동기의-호응" class="slide level2" data-background-color="black" data-background-image="https://25.media.tumblr.com/fc175d258e3109a3fa0a038ef4e577a4/tumblr_mj8tdt5Qxn1rmhlw7o1_r1_500.gif" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.5">
+<section id="우선-이렇게-가정합니다" class="slide level2">
+<h2>우선 이렇게 가정합니다!</h2>
+<div>
+<ul>
+<li><a href="https://github.com/">깃허브</a> 계정은 생성해 두었다.</li>
+<li><a href="https://desktop.github.com/">깃허브 데스크탑</a>을 설치했다.</li>
+<li><a href="https://code.visualstudio.com/">VS Code</a> 설치했다.</li>
+</ul>
+</div>
+</section>
+<section id="목적과-동기의-호응" class="slide level2 center" data-background-color="black" data-background-image="https://25.media.tumblr.com/fc175d258e3109a3fa0a038ef4e577a4/tumblr_mj8tdt5Qxn1rmhlw7o1_r1_500.gif" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.5">
 <h2>목적과 동기의 호응</h2>
 <p>“서로 뭘 하는지 목적을 맞춰야 뭐 하나라도 건질 수 있겠죠?”</p>
+</section>
+<section id="오늘-튜토리얼을-하는-이유" class="slide level2">
+<h2>오늘 튜토리얼을 하는 이유</h2>
+<ol type="1">
+<li class="fragment">연구자라면 git과 github에 관한 지식이 필수적인 시대</li>
+<li class="fragment">보다 편리한 (학술) 문서 작성과 유통을 위한 방법</li>
+<li class="fragment">(강사 개인) VCS와 스크립트 랭귀지를 다루는 기쁨을 맛보시기를…</li>
+</ol>
 </section>
 <section id="오늘-튜토리얼의-목적" class="slide level2">
 <h2>오늘 튜토리얼의 목적</h2>
 <ol type="1">
-<li class="fragment">Git이 왜 중요한지 알아간다.</li>
-<li class="fragment">Github 계정을 만들고 최초의 <code>commit</code>, <code>push</code>, <code>pull</code>을 해본다.<br>
+<li class="fragment">Git이 왜 중요한지 알아보자.</li>
+<li class="fragment">Github 계정을 만들고 최초의 <code>commit</code>, <code>push</code>, <code>pull</code>을 해보자.<br>
 </li>
-<li class="fragment">Markdown으로 문서를 작성해본다.</li>
+<li class="fragment">Markdown으로 문서를 작성해보자.</li>
 </ol>
 </section>
 <section id="좀-더-욕심을-내보자면" class="slide level2">
 <h2>좀 더 욕심을 내보자면…</h2>
 <ul>
 <li class="fragment">Github 위에 블로그 만들기</li>
-<li class="fragment">그리고</li>
+<li class="fragment">코드가 가미된 Markdown 문서 만들어보기</li>
 </ul>
 </section>
-<section id="좀-더-욕심을-내보자면-1" class="slide level2" data-background-color="black" data-background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" data-background-size="cover" data-background-repeat="none" data-background-opacity="0.2" data-transition="none" data-background-transition="zoom" data-transition-speed="slow">
+<section id="좀-더-욕심을-내보자면-1" class="slide level2" data-background-color="black" data-background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" data-background-size="cover" data-background-repeat="none" data-background-opacity="0.3" data-transition="none" data-background-transition="zoom" data-transition-speed="slow">
 <h2>좀 더 욕심을 내보자면…</h2>
 <div>
 <ul>
 <li>Github 위에 블로그 만들기</li>
-<li>그리고</li>
+<li>코드가 가미된 Markdown 문서 만들어보기</li>
 </ul>
 </div>
 </section></section>
 <section>
-<section id="git" class="title-slide slide level1 center">
-<h1>Git</h1>
+<section id="why-git" class="title-slide slide level1 center">
+<h1>Why Git?</h1>
 
 </section>
 <section id="its-timeline" class="slide level2" data-background-iframe="https://www.youtube.com/embed/VgxuSclbCjA" data-background-interactive="true">
 <h2>It’s Timeline</h2>
 </section>
-<section id="history" class="slide level2">
+<section id="history" class="slide level2 smaller">
 <h2>History</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="http://students.washington.edu/kevint02/linus.jpeg"></p>
+<p></p><figcaption aria-hidden="true">Linus Torvalds</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
 <ul>
-<li class="fragment">Linus Tobals</li>
-</ul>
-</section>
-<section id="해장술은-필요한가" class="slide level2">
-<h2>해장술은 필요한가?</h2>
+<li class="fragment">Git은 리눅스의 개발 과정에서 탄생했다.
 <ul>
-<li class="fragment">필요하다면 주종은?</li>
-<li class="fragment">해장술에 어울리는 안주는?</li>
-<li class="fragment">국물이 필요한가?</li>
+<li class="fragment">Open Source의 특성상 개발 이력 관리가 필요</li>
+<li class="fragment">이른바 VCS를 의도하지 않게 혁신</li>
+</ul></li>
+<li class="fragment">VCS란?
+<ul>
+<li class="fragment">Version Control System</li>
+<li class="fragment">Git이 없었다면 리눅스도 없었다!</li>
+</ul></li>
+<li class="fragment">협업의 기술적 기초
+<ul>
+<li class="fragment">좋은 도구는 협업의 효율성과 가능성을 넓힌다.</li>
+<li class="fragment">Git은 현재 표준적인 협업 도구</li>
+</ul></li>
 </ul>
-<div class="fragment">
-<p><code>p</code>의 텍스트가 <code>ul</code>, <code>ol</code>의 텍스트와 달라 보이나요?</p>
+</div>
 </div>
 </section>
-<section id="breakfast" class="slide level2">
-<h2>Breakfast</h2>
+<section id="git이란" class="slide level2 center" data-background-color="black" data-background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.5">
+<h2>Git이란</h2>
 <ul>
-<li class="fragment">Eat eggs</li>
-<li class="fragment">Drink coffee</li>
+<li class="fragment">한마디로 말하면 VCS이다.</li>
+<li class="fragment">누가 무엇을 언제 바꾸었는지를 일목요연하게 기록한다.</li>
+<li class="fragment">필요한 시점으로 언제든 돌아갈 수 있다.</li>
 </ul>
+</section>
+<section id="잠깐" class="slide level2">
+<h2>잠깐!</h2>
+<div>
+<ul>
+<li>우리는 지금 git을 본격적으로 배우는 것이 아니다!</li>
+<li>따라서 앞으로 1인 사용자만을 가정한다.</li>
+<li>1인일 때도 효과적인가?
+<ul>
+<li>나는 내가 어제 뭐했는지도 정확하게 기억하지 못한다.</li>
+<li>git을 쓰면 나의 이런 멍청함이 보완된다!</li>
+</ul></li>
+<li>웹하드와 유사하기도?
+<ul>
+<li>단 일반적인 용도의 웹하드와 다르다!</li>
+<li>코드/문서를 관리하고 정리하는 용도</li>
+<li>기기 간 이동 작업에 편리</li>
+</ul></li>
+</ul>
+</div>
 </section></section>
 <section>
-<section id="in-the-evening" class="title-slide slide level1 center">
-<h1>In the evening</h1>
+<section id="basic-concept-of-git" class="title-slide slide level1 center">
+<h1>Basic Concept of Git</h1>
 
 </section>
-<section id="dinner" class="slide level2">
-<h2>Dinner</h2>
-<ul>
-<li class="fragment">Eat spaghetti</li>
-<li class="fragment">Drink wine</li>
-</ul>
-</section>
+<section id="add-commit-push-pull" class="slide level2">
+<h2>Add, Commit, Push, Pull</h2>
+
+<img data-src="https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG" class="r-stretch quarto-figure-center"></section>
 <section id="going-to-sleep" class="slide level2">
 <h2>Going to sleep</h2>
 <ul>
@@ -495,7 +545,11 @@
 
 <aside><div>
 <p>Some additional commentary of more peripheral interest.</p>
-</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>A footnote</p></li></ol></aside></section></section>
+</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>A footnote</p></li></ol></aside></section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<p><a href="https://backlog.com/git-tutorial/kr/intro/intro1_1.html" class="uri">https://backlog.com/git-tutorial/kr/intro/intro1_1.html</a></p>
+</section></section>
 <section>
 <section id="testing-increamental" class="title-slide slide level1 center">
 <h1>Testing Increamental</h1>

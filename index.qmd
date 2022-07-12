@@ -19,59 +19,98 @@ format:
 
 # 시작하기에 앞서 
 
-## 목적과 동기의 호응 {background-color="black" background-image="https://25.media.tumblr.com/fc175d258e3109a3fa0a038ef4e577a4/tumblr_mj8tdt5Qxn1rmhlw7o1_r1_500.gif" background-size="cover" background-repeat="center" background-opacity="0.5"}
+## 우선 이렇게 가정합니다! 
+
+:::{ .nonincremental }
+
+- [깃허브](https://github.com/) 계정은 생성해 두었다. 
+- [깃허브 데스크탑](https://desktop.github.com/)을 설치했다. 
+- [VS Code](https://code.visualstudio.com/) 설치했다. 
+
+:::
+
+## 목적과 동기의 호응 {background-color="black" background-image="https://25.media.tumblr.com/fc175d258e3109a3fa0a038ef4e577a4/tumblr_mj8tdt5Qxn1rmhlw7o1_r1_500.gif" background-size="cover" background-repeat="center" background-opacity="0.5" class="center"}
 
 "서로 뭘 하는지 목적을 맞춰야 뭐 하나라도 건질 수 있겠죠?"
 
+## 오늘 튜토리얼을 하는 이유 
+
+1. 연구자라면 git과 github에 관한 지식이 필수적인 시대 
+2. 보다 편리한 (학술) 문서 작성과 유통을 위한 방법
+3. (강사 개인) VCS와 스크립트 랭귀지를 다루는 기쁨을 맛보시기를... 
+
 ## 오늘 튜토리얼의 목적 
 
-1. Git이 왜 중요한지 알아간다. 
-2. Github 계정을 만들고 최초의 `commit`, `push`, `pull`을 해본다.  
-3. Markdown으로 문서를 작성해본다. 
+1. Git이 왜 중요한지 알아보자. 
+2. Github 계정을 만들고 최초의 `commit`, `push`, `pull`을 해보자.  
+3. Markdown으로 문서를 작성해보자. 
 
 ## 좀 더 욕심을 내보자면...
 
 - Github 위에 블로그 만들기 
-- 그리고 
+- 코드가 가미된 Markdown 문서 만들어보기 
 
-## 좀 더 욕심을 내보자면...{background-color="black" background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" background-size="cover" background-repeat="none" background-opacity="0.2" transition="none" background-transition="zoom" transition-speed="slow"}
+## 좀 더 욕심을 내보자면...{background-color="black" background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" background-size="cover" background-repeat="none" background-opacity="0.3" transition="none" background-transition="zoom" transition-speed="slow"}
 
 :::{.nonincremental}
 - Github 위에 블로그 만들기 
-- 그리고 
+- 코드가 가미된 Markdown 문서 만들어보기 
 :::
 
 
-# Git 
+# Why Git?
 
 
 ## It's Timeline {background-iframe="https://www.youtube.com/embed/VgxuSclbCjA" background-interactive='true'}
 
-## History 
 
-- Linus Tobals 
+## History {.smaller}
 
-## 해장술은 필요한가?
+:::: {.columns}
 
-- 필요하다면 주종은? 
-- 해장술에 어울리는 안주는?
-- 국물이 필요한가?
+::: {.column width="40%"}
+![Linus Torvalds](http://students.washington.edu/kevint02/linus.jpeg) 
+:::
 
-. . . 
+::: {.column width="60%"}
+- Git은 리눅스의 개발 과정에서 탄생했다. 
+  - Open Source의 특성상 개발 이력 관리가 필요 
+  - 이른바 VCS를 의도하지 않게 혁신 
+- VCS란? 
+  - Version Control System 
+  - Git이 없었다면 리눅스도 없었다! 
+- 협업의 기술적 기초 
+  - 좋은 도구는 협업의 효율성과 가능성을 넓힌다. 
+  - Git은 현재 표준적인 협업 도구 
+:::
 
-`p`의 텍스트가 `ul`, `ol`의 텍스트와 달라 보이나요? 
+::::
 
-## Breakfast
+## Git이란{background-color="black" background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" background-size="cover" background-repeat="center" background-opacity="0.5" class="center"}
 
-- Eat eggs
-- Drink coffee
+- 한마디로 말하면 VCS이다. 
+- 누가 무엇을 언제 바꾸었는지를 일목요연하게 기록한다. 
+- 필요한 시점으로 언제든 돌아갈 수 있다. 
 
-# In the evening
+## 잠깐! 
 
-## Dinner
+:::{.nonincremental}
+- 우리는 지금 git을 본격적으로 배우는 것이 아니다! 
+- 따라서 앞으로 1인 사용자만을 가정한다. 
+- 1인일 때도 효과적인가? 
+  - 나는 내가 어제 뭐했는지도 정확하게 기억하지 못한다. 
+  - git을 쓰면 나의 이런 멍청함이 보완된다! 
+- 웹하드와 유사하기도?  
+  - 단 일반적인 용도의 웹하드와 다르다! 
+  - 코드/문서를 관리하고 정리하는 용도
+  - 기기 간 이동 작업에 편리 
+:::
 
-- Eat spaghetti
-- Drink wine
+# Basic Concept of Git
+
+## Add, Commit, Push, Pull
+
+![](https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG){fig-align="center"}
 
 ## Going to sleep
 
@@ -92,6 +131,11 @@ format:
 ::: aside
 Some additional commentary of more peripheral interest.
 :::
+
+## References 
+
+<https://backlog.com/git-tutorial/kr/intro/intro1_1.html>
+
 
 # Testing Increamental 
 
