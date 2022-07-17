@@ -23,6 +23,8 @@ format:
 
 :::{ .nonincremental }
 
+- [깃](https://gitforwindows.org/)을 설치했다. 
+  - 맥을 쓰시면 별로도 설치하지 않아도 됩니다... 
 - [깃허브](https://github.com/) 계정은 생성해 두었다. 
 - [깃허브 데스크탑](https://desktop.github.com/)을 설치했다. 
 - [VS Code](https://code.visualstudio.com/) 설치했다. 
@@ -125,6 +127,34 @@ format:
 ![](https://backlog.com/git-tutorial/kr/img/post/intro/capture_intro1_1_1.png){.absolute top=200 left=100 width="800" height="400"}
 
 ## Add & Commit 
+
+## 연습해봅시다. 
+
+## More 
+
+- Branch, Cherry-picking, ... 
+
+# Github 
+
+## Github는 원격 저장소 
+
+## Push & Pull 
+
+## Other Things 
+
+- Static Web Hosting 
+- Github Actions 
+
+# Markdown 
+
+## 정말 쉬운 스크립트 문서 도구 
+
+- 구조화된 글쓰기 가능 
+- $\rm \LaTeX$ 친화적 
+- 다른 문서 포맷으로 쉽게 바꿀 수 있다. 
+
+## Basic Doc of Github 
+
 
 # How to add Footnote
 
