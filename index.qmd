@@ -240,17 +240,21 @@ format:
 ## Other Services in Github
 
 :::{.nonincremental}
+
 - Github Pages 
-  - Static Web Hosting 
+  - 정적 웹 호스팅 서비스 
 - Github Actions 
-  - Automation service 
+  - 자동화 서비스 
 - Github Copilot 
-  - Code completion assisted by AI(GPT-3)
+  - AI(GPT-3) 기반 코드 작성 보고 
 <br>
 $\vdots$
+
 :::
 
+
 ## {background-color="black" background-image="./images/git_procedure_V2.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
+
 
 # Markdown 
 
