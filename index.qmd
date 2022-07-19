@@ -252,6 +252,7 @@ $\vdots$
 
 :::
 
+## {background-color="black" background-image="./images/Git-PUSH-pULL-1280x640.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
 
 ## {background-color="black" background-image="./images/git_procedure_V2.png" background-size="cover" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
 
