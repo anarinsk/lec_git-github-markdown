@@ -28,6 +28,7 @@ format:
 - [깃허브](https://github.com/) 계정은 생성해 두었다. 
 - [깃허브 데스크탑](https://desktop.github.com/)을 설치했다. 
 - [VS Code](https://code.visualstudio.com/) 설치했다. 
+- [Quarto](https://quarto.org/)를 설치했다. 
 
 :::
 
@@ -71,7 +72,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="40%"}
-![Linus Torvalds](http://students.washington.edu/kevint02/linus.jpeg) 
+![&nbsp;&nbsp;Linus Torvalds](http://students.washington.edu/kevint02/linus.jpeg) 
 :::
 
 ::: {.column width="60%"}
@@ -114,306 +115,188 @@ format:
 
 ## Add, Commit, Push, Pull
 
-<br>
-
-![](https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG){.absolute top=150 left=120 right=10 width="800" height="500"}
-
-
+![](https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG){.absolute top=120 left=80 width=900 height=550}
 
 ## 여러분의 버전 관리는 아마도...
 
-. . .
+<br>
 
-![](https://backlog.com/git-tutorial/kr/img/post/intro/capture_intro1_1_1.png){.absolute top=200 left=100 width="800" height="400"}
+::: {.r-stack}
+![](https://heekangpark.github.io/assets/img/git/vcs-hell.png){.fragment width="400" height="500"}
+
+![](https://velog.velcdn.com/images/dumibell/post/66b3f899-7c42-4b9a-8411-568f45231fdd/image.png){.fragment width="900" height="250"}
+
+![](https://backlog.com/git-tutorial/kr/img/post/intro/capture_intro1_1_1.png){.fragment width="600" height="300"}
+
+:::
 
 ## Add & Commit 
 
-## 연습해봅시다. 
+![](./images/git-add-commit.png){.absolute top=150 left=100 width=900 height=500 style="background:#FFFFFF;"}
 
-## More 
+## 연습: 준비물 
 
-- Branch, Cherry-picking, ... 
+- Git (for Windows)
+- Github Desktop (계정 만들어 둘 것)
 
-# Github 
+## Git 폴더 만들기 
+
+:::{.nonincremental}
+
+- Git 폴더를 만드는 방법은 세 가지가 있습니다. 
+
+  1. 애초부터 Git 폴더로 생성하기 
+  2. Github에서 Clone 해오기 
+
+:::
+
+## Github Desktop
+
+::: {.r-stack}
+![](./images/github-desktop_1.png){.fragment width="900" height="600"}
+
+![](./images/github-desktop_2.png){.fragment width="900" height="600"}
+
+![](./images/github-desktop_3.png){.fragment width="900" height="600"}
+:::
+
+
+## Add & Commit 이해하기 
+
+:::{.nonincremental}
+
+- Add는 커밋할 상태로 파일을 올려두는 것을 의미합니다. 
+- Commit은 (임시) 저장이라고 이해하면 편합니다. 
+- Commit을 해두면 그 이전 상태로 언제든지 돌아갈 수 있습니다. 
+  - 단, Desktop 앱을 통해서는 아닙니다... 
+  - 터미널 혹은 [SourceTree](https://www.sourcetreeapp.com)를 쓰면 자유롭게 활용할 수 있습니다. 
+
+:::
+
+## 깃 (더) 배우기 
+
+:::{.nonincremental}
+- <https://backlog.com/git-tutorial/kr>
+- [subicura/git](https://subicura.com/git/guide/#git%E1%84%8B%E1%85%B4-%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%B7)
+- <https://opentutorials.org/course/2708>
+:::
+
+## Git과 Github의 역할  
+
+:::{.nonincremental}
+- 무궁무진할 정도로 다양합니다. 
+- Github는 공통작업을 기본으로 합니다. 
+:::
+
+# {background-color="white" background-image="https://miro.medium.com/max/4000/1*J8O2xd9ZqxWr2x6EP4MHmg.png" background-size="contain" background-repeat="center" background-opacity="1" class="center"}
 
 ## Github는 원격 저장소 
 
-## Push & Pull 
+::: { .nonincremental }
+<https://github.com>
+
+- 작업한 내용을 온라인을 통해 동기화 
+  - 원격저장소 
+- 서로 다른 기기로 작업할 때 유용 
+  - PC1 작업 &rarr; Git Push  &rarr; PC2 Git Pull  &rarr; 작업 &rarr; Git Push  &rarr;  $\cdots$
+- 여러 명이 협업할 때도 유용 
+  - Branch 그리고 Pull Request의 개념이 필요하다. 
+:::
+
+## {background-color="black" background-image="./images/Git-PUSH-pULL-1280x640.png" background-size="cover" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
 
 ## Other Things 
 
+:::{.nonincremental}
 - Static Web Hosting 
 - Github Actions 
+- Github Copilot 
+<br>
+$\vdots$
+:::
 
 # Markdown 
 
-## 정말 쉬운 스크립트 문서 도구 
+## 쉽고 효율적인 스크립트 문서 도구 
 
+:::{.nonincremental}
 - 구조화된 글쓰기 가능 
 - $\rm \LaTeX$ 친화적 
 - 다른 문서 포맷으로 쉽게 바꿀 수 있다. 
-
-## Basic Doc of Github 
-
-
-# How to add Footnote
-
-## Footnote 
-
-:::{ .nonincremental }
-- Green ^[A footnote]
-- Brown
-- Purple
-- 한글과 조화롭나요? 
+- 코드(Python, R, etc)와 문서를 융합할 수 있다. 
+- 깃헙의 기본 문서 포맷 
+  - 깃헙 리포에서 제일 먼저 보게 되는 내용; `README.md`
+  - 자신의 프로젝트를 알리는 문서 
 :::
 
-::: aside
-Some additional commentary of more peripheral interest.
+## 마크다운 기본 문법 
+
+:::{.nonincremental}
+[기본 문법](https://quarto.org/docs/authoring/markdown-basics.html)
+
+- 모든 마크다운 문법이 동일하지는 않다. 
+  - Github-flavored markdown, Kramdown 등등 
+- 기본 문법은 동일하니 기본적인 부분을 파악해두면 된다. 
 :::
 
-## References 
+## 연습: 준비물 
 
-<https://backlog.com/git-tutorial/kr/intro/intro1_1.html>
-
-
-# Testing Increamental 
-
-## Incremental activated 
-
-::: {.incremental}
-- Eat spaghetti
-- Drink wine
+:::{.nonincremental}
+- VS Code 
+  - "Makrdown All in One" 확장 설치 
+- <https://stackedit.io/app#>
 :::
 
-## Inscremental deactivated
+# Github Pages + Markdown 
 
-::: {.nonincremental}
-- Eat spaghetti
-- Drink wine
-:::
+## Github Pages 
 
-# Testing Pause 
+:::{.nonincremental}
 
-## Slide with a pause
+<https://docs.github.com/en/pages>
 
-content before the pause
-
-. . .
-
-content after the pause
-
-# Multicolumn 
-
-## Example 
-::::: { .nonincremental }
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Left column
-
-- This is left column.
-- 40% is allocated. 
-:::
-
-::: {.column width="60%"}
-Right column
-
-- 이쪽은 오른쪽 열입니다. 
-- 60%가 할당되어 있지요! 
-:::
-
-::::
-
-:::::
-
-# Cotents Overflow 
-
-## Page w/o `{.smaller}`
-
-- This is normal 
-- 이게 보통 크기 
-
-## Page w `{.smaller}` { .smaller }
-
-- This is smaller 
-- 이게 작은 크기 
-
-## 스크롤이 가능한 슬라이드 {.scrollable}
-
-:::{ .nonincremental}
-- Bullet number 1
-- Bullet number 2
-- Bullet number 3
-- Bullet number 4
-- Bullet number 5
-- Bullet number 6
-- Bullet number 7 
-- 총알 넘버 8 
-- 총알 넘버 9
-- 총알 넘버 10
-- 총알 넘버 11
-- 총알 넘버 12
-:::
-
-# How to apply fonts
-
-## sample css { .smaller }
-
-:::{ .nonincremental }
-- `.qmd` 파일과 같은 위치에 `.css` 파일을 두고, 문서 앞의 YAML에서 해당 파일을 로드하면 된다. 
-- 폰트를 로딩하고 적용하는 방법은 대체로 비슷하다. 이 문서에 적용된 `testflight.scss`를 보자. 
-    - 2-4 번 라인이 폰트를 입력하는 명령이다. 
-    - 나머지 아래는 각 양식 별로 폰트와 크기를 지정한다. 
-:::
-
-```{.css code-line-numbers=2-4}
-/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-@import url("https://cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-subset.css");
-
-/*-- scss:rules --*/
-.reveal h1, 
-.reveal h2, 
-.reveal h3, 
-.reveal h4, 
-.reveal h5, 
-.reveal h6 {
-  font-family: 'NanumSquare' !important;
-  //text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-}
-
-.reveal section p {
-    font-family: 'pretendard' !important;
-    font-size: 90%;
-}
-
-.reveal ul, 
-.reveal li, 
-.reveal ol{
-    font-family: 'pretendard' !important;
-    font-size: 95%;
-}
-```
-
-# Tabsets 
-
-## 탭셋을 적용해보자. 
-
-::: {.panel-tabset}
-
-### Tab A
-
-Content for `Tab A` 
-
-봉준호가 깐느봉일까요?
-
-### Tab B
-
-Content for `Tab B`
-
-박찬욱이 깐느박일까요? 
+- Github의 가장 좋은 기능 
+- (공짜로) 복잡한 서버 세팅 없이 웹 페이지를 호스팅해준다. 
+- 복잡한 웹 서버는 아니다. 
+  - Static Web을 지원 
+  - 이미 렌더링된 페이지를 노출한다. 
 
 :::
 
-# $\rm\LaTeX$ 테스트 
+## 작업 흐름
 
-## 수식 표현을 테스트합니다.
-$$
-\begin{aligned}
-  \dot{x} & = \sigma(y-x) \\
-  \dot{y} & = \rho x - y - xz \\
-  \dot{z} & = -\beta z + xy
-\end{aligned} 
-$$
+:::{.nonincremental}
 
+- local(your PC)에서 도구를 사용해서 페이지 렌더링 
+- 렌더링된 페이지를 Github으로 push 
+- Github Pages가 스태틱웹의 형태로 페이지를 호스팅 
 
-$$
-   \begin{bmatrix}
-                1 & x & 0 \\
-                0 & 1 & -1
-        \end{bmatrix}\begin{bmatrix}
-                1  \\
-                y  \\
-                1
-        \end{bmatrix}
-        =\begin{bmatrix}
-                1+xy  \\
-                y-1
-        \end{bmatrix}.
-$$
-
-인라인 수식은 잘 들어갑니꽈? $y_i = \alpha + \beta x_i$는 회귀방정식이얌~ 
-
-## 수식 표현을 테스트합니다. (`.smaller`) { .smaller }
-
-$$
-\begin{aligned}
-  \dot{x} & = \sigma(y-x) \\
-  \dot{y} & = \rho x - y - xz \\
-  \dot{z} & = -\beta z + xy
-\end{aligned} 
-$$
-
-
-$$
-   \begin{bmatrix}
-                1 & x & 0 \\
-                0 & 1 & -1
-        \end{bmatrix}\begin{bmatrix}
-                1  \\
-                y  \\
-                1
-        \end{bmatrix}
-        =\begin{bmatrix}
-                1+xy  \\
-                y-1
-        \end{bmatrix}.
-$$
-
-인라인 수식은 잘 들어갑니꽈? $y_i = \alpha + \beta x_i$는 회귀방정식이얌~ 
-
-# How to change background 
-
-## Slide, aquamarine {background-color="aquamarine"}
-
-This changes color of background! 
-
-## 크기 지정 벽지 {background-color="black" background-image="https://www.comicbasics.com/wp-content/uploads/2020/01/Top-10-Marvel-Superheroes-That-Have-Doctorates-678x381.jpg" background-size="300px" background-repeat="repeat" background-opacity="0.5"}
-
-This slide's background image will be sized to 100px and repeated.
-
-
-## 꽉찬 벽지 {background-color="black" background-image="https://www.comicbasics.com/wp-content/uploads/2020/01/Top-10-Marvel-Superheroes-That-Have-Doctorates-678x381.jpg" background-size="cover" background-repeat="repeat" background-opacity="0.5"}
-
-:::{style="color: yellow;"}
-This slide's background image fits the screen.
 :::
 
-- Font color is changed locally. 
+## {background-color="white" background-image="./images/github-pages-workflow.png" background-size="cover" background-repeat="center" background-opacity="1" class="center"}
 
-## {background-color="aquamarine"}
+## 무엇을 할 수 있나? 
 
-(A slide with no title)
+:::{.nonincremental}
+- 단순 웹 페이지 
+- 프로젝트 웹 페이지 
+- 책 
+- 블로그 
+:::
 
-## {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat" background-opacity="0.5"}
+## 연습: 준비물
 
-(Another slide with no title)
+- Quarto 
+- VS Code 
+  -Quarto Extension 
 
-# How to use code 
+## Git 폴더 만들기 
 
-## Use env 
+- Github Pages를 활용할 예정이기 때문에 Github Desktop 앱으로 만들자. 
 
-- 코드를 실행하기 위해서는 환경을 쓰는 게 좋다. 
-- python의 env를 쓰든 conda env를 쓰든 필요한 것을 쓰자. 
-- Code Extension이 아직까지 환경을 제대로 지원하지 않는다. 
-  - 실행용 코드가 들어간 경우 렌더링은 터미날에서 직접 실행하자. 
+## Step by Step 
 
-. . .
+<https://quarto.org/docs/websites/website-blog.html>
 
-```bash 
-? quarto render {YOUR-FILE.qmd}
-```
 
-# End of Document
+
