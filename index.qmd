@@ -156,8 +156,8 @@ format:
 ## 연습: 준비물 
 
 :::{.nonincremental}
-- Git (for Windows)
-- Github Desktop (계정 만들어 두셨쥬?)
+- `Git` (for Windows)
+- `Github Desktop` (계정 만들어 두셨쥬?)
 :::
 
 ## Git 폴더 만들기 
