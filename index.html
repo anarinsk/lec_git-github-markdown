@@ -323,7 +323,7 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Git, Github and Markdown</h1>
-  <p class="subtitle">Trinity for Economists</p>
+  <p class="subtitle">Three Tools for Economists</p>
   <p class="author"><a href="https://github.com/anarinsk/lec_git-github-markdown/">Junsok Huhh</a></p>
   <p class="date">2022-07-29</p>
 </section>
@@ -341,9 +341,9 @@
 <ul>
 <li>맥을 쓰시면 별로도 설치하지 않아도 됩니다…</li>
 </ul></li>
-<li><a href="https://github.com/">깃허브</a> 계정은 생성해 두었다.</li>
+<li><a href="https://github.com/">깃허브</a> 계정을 생성해 두었다.</li>
 <li><a href="https://desktop.github.com/">깃허브 데스크탑</a>을 설치했다.</li>
-<li><a href="https://code.visualstudio.com/">VS Code</a> 설치했다.</li>
+<li><a href="https://code.visualstudio.com/">VS Code</a>를 설치했다.</li>
 <li><a href="https://quarto.org/">Quarto</a>를 설치했다.</li>
 </ul>
 </div>
@@ -411,7 +411,7 @@
 <li>Git은 리눅스의 개발 과정에서 탄생했다.
 <ul>
 <li>Open Source의 특성상 개발 이력 관리가 필요</li>
-<li>이른바 VCS를 의도하지 않게 혁신</li>
+<li>이른바 VCS를 (의도하지 않게) 혁신</li>
 </ul></li>
 <li>VCS란?
 <ul>
@@ -428,52 +428,57 @@
 </div>
 </div>
 </section>
-<section id="git이란" class="slide level2 center" data-background-color="black" data-background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.2">
-<h2>Git이란</h2>
+<section id="git이란" class="slide level2">
+<h2>Git이란?</h2>
 <div>
 <ul>
-<li>한마디로 말하면 VCS이다.
-<ul>
-<li>Version Control System</li>
-</ul></li>
+<li>한마디로 말하면 VCS이다.</li>
 <li>누가 무엇을 언제 바꾸었는지를 일목요연하게 기록한다.</li>
-<li>필요한 시점으로 언제든 돌아갈 수 있다.</li>
+<li>필요한 시점으로 언제든 돌아갈 수 있다(백업).</li>
 </ul>
 </div>
 </section>
-<section id="잠깐" class="slide level2">
+<section id="잠깐" class="slide level2 smaller">
 <h2>잠깐!</h2>
 <div>
 <ul>
-<li>우리는 지금 git을 본격적으로 배우는 것이 아니다!
+<li>우리는 지금 git을 본격적으로 배우는 것이 아니다…
 <ul>
-<li>따라서 앞으로 1인 사용자만을 가정한다.</li>
+<li>따라서 이 특강에서는 1인 사용자만을 가정</li>
 </ul></li>
 <li>1인일 때도 쓸모가 있을까?
 <ul>
 <li>나는 어제 뭐했는지도 정확하게 기억하지 못한다…</li>
-<li>git을 쓰면 나의 이런 멍청함이 보완된다!</li>
+<li>Git + Github는 나의 어리석음을 보완해준다.</li>
 </ul></li>
 <li>웹하드와 유사한 것일까?
 <ul>
-<li>단 일반적인 용도의 웹하드와 다르다!</li>
-<li>코드/문서를 관리하고 정리하는 용도</li>
-<li>기기 간 이동 작업에 편리</li>
+<li>Half Yes; 파일을 저장</li>
+<li>Half No; 대용량 파일 저장 불가</li>
+</ul></li>
+<li>코드/문서를 관리하고 정리하는 용도
+<ul>
+<li>1인 이용시, 기기 간 이동 작업에 편리</li>
+<li>협업 시, 버전 관리의 자동화</li>
+</ul></li>
+<li>Github의 경우
+<ul>
+<li>뒤에서 보겠지만, 개발자/연구자에게 유용한 부가 기능 제공</li>
 </ul></li>
 </ul>
 </div>
 </section></section>
 <section>
-<section id="basic-concept-of-git" class="title-slide slide level1 center">
-<h1>Basic Concept of Git</h1>
+<section id="basics-of-git" class="title-slide slide level1 center" data-background-color="black" data-background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.2">
+<h1>Basics of Git</h1>
 
 </section>
 <section id="add-commit-push-pull" class="slide level2">
 <h2>Add, Commit, Push, Pull</h2>
-<p><img data-src="https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG" class="absolute" style="top: 120px; left: 80px; width: 900px; height: 550px; "></p>
+<p><img data-src="https://velog.velcdn.com/images/chlwnstjr94/post/a9e014c5-97c7-473a-aa3e-dcc3bd4e99e5/image.PNG" class="absolute" style="top: 120px; left: 80px; width: 800px; height: 550px; "></p>
 </section>
 <section id="여러분의-버전-관리는-아마도" class="slide level2">
-<h2>여러분의 버전 관리는 아마도…</h2>
+<h2>여러분의 버전 관리는 아마도…?</h2>
 <p><br></p>
 <div class="r-stack">
 <p><img data-src="https://heekangpark.github.io/assets/img/git/vcs-hell.png" class="fragment" width="400" height="500"></p>
@@ -485,12 +490,29 @@
 <h2>Add &amp; Commit</h2>
 <p><img data-src="./images/git-add-commit.png" class="absolute" style="background:#FFFFFF;top: 150px; left: 100px; width: 900px; height: 500px; "></p>
 </section>
+<section id="add-commit-1" class="slide level2">
+<h2>Add &amp; Commit</h2>
+<ul>
+<li class="fragment"><code>Working Directory</code>
+<ul>
+<li class="fragment">무슨 일이든 해도 좋다!</li>
+</ul></li>
+<li class="fragment"><code>Staging Area</code>
+<ul>
+<li class="fragment">저장이 필요한 수정/추가된 파일의 목록을 만들어 둔다.</li>
+</ul></li>
+<li class="fragment"><code>Commit</code>
+<ul>
+<li class="fragment">Staging Area의 내용을 모아서 스냅샷을 만든다.</li>
+</ul></li>
+</ul>
+</section>
 <section id="연습-준비물" class="slide level2">
 <h2>연습: 준비물</h2>
 <div>
 <ul>
 <li>Git (for Windows)</li>
-<li>Github Desktop (계정 만들어 둘 것)</li>
+<li>Github Desktop (계정 만들어 두셨쥬?)</li>
 </ul>
 </div>
 </section>
@@ -509,9 +531,9 @@
 <section id="github-desktop" class="slide level2">
 <h2>Github Desktop</h2>
 <div class="r-stack">
-<p><img data-src="./images/github-desktop_1.png" class="fragment" width="900" height="600"></p>
-<p><img data-src="./images/github-desktop_2.png" class="fragment" width="900" height="600"></p>
-<p><img data-src="./images/github-desktop_3.png" class="fragment" width="900" height="600"></p>
+<p><img data-src="./images/github-desktop_1.png" class="fragment" width="850" height="550"></p>
+<p><img data-src="./images/github-desktop_2.png" class="fragment" width="850" height="550"></p>
+<p><img data-src="./images/github-desktop_3.png" class="fragment" width="850" height="550"></p>
 </div>
 </section>
 <section id="add-commit-이해하기" class="slide level2">
@@ -528,6 +550,10 @@
 </ul>
 </div>
 </section>
+<section id="두려워-마세요" class="slide level2 center" data-background-color="black" data-background-image="https://c.tenor.com/_Vjz-KB-sj4AAAAC/lego-panic.gif" data-background-size="contain" data-background-repeat="center" data-background-opacity="0.3">
+<h2>두려워 마세요!</h2>
+<p>“그냥 파일 시스템일 뿐입니다. 복붙에서 저장해 두면 되요.”</p>
+</section>
 <section id="깃-더-배우기" class="slide level2">
 <h2>깃 (더) 배우기</h2>
 <div>
@@ -540,7 +566,7 @@
 </section>
 <section id="branch" class="slide level2">
 <h2>Branch</h2>
-<p><img data-src="./images/branch-example.png" class="absolute" style="background:#FFFFFF;top: 100px; left: 100px; width: 800px; height: 550px; "></p>
+<p><img data-src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png" class="absolute" style="background:#FFFFFF;top: 100px; left: 100px; width: 800px; height: 500px; "></p>
 </section>
 <section id="git과-github의-역할" class="slide level2">
 <h2>Git과 Github의 역할</h2>
@@ -556,22 +582,27 @@
 <h1></h1>
 
 </section>
-<section id="github는-원격-저장소" class="slide level2">
+<section id="github는-원격-저장소" class="slide level2 smaller">
 <h2>Github는 원격 저장소</h2>
 <div>
 <p><a href="https://github.com" class="uri">https://github.com</a></p>
 <ul>
 <li>작업한 내용을 온라인을 통해 동기화
 <ul>
-<li>원격 저장소</li>
+<li>일종의 원격 저장소</li>
 </ul></li>
-<li>서로 다른 기기로 작업할 때 유용
+<li>1인용; 서로 다른 기기로 작업할 때 유용
 <ul>
-<li>PC1 작업 → Git Push → PC2 Git Pull → 작업 → Git Push → <span class="math inline">\(\cdots\)</span></li>
+<li>PC 1 작업 → Git Push → PC2 Git Pull → 작업 → Git Push → PC 3 GIt Pull → <span class="math inline">\(\cdots\)</span></li>
 </ul></li>
-<li>여러 명이 협업할 때도 유용
+<li>다인용; 프로젝트의 일관성 유지 및 관리
 <ul>
-<li>Branch 그리고 Pull Request의 개념이 필요하다.</li>
+<li>Branch, Pull Request, Fork 등의 개념이 필요</li>
+<li>익숙하지 않을 뿐 그렇게 어려운 개념은 아닙니다.</li>
+</ul></li>
+<li>2018년 마이크로소프트에서 인수
+<ul>
+<li>개인 및 소규모 개발사의 기본적인 기능은 무료</li>
 </ul></li>
 </ul>
 </div>
@@ -579,13 +610,22 @@
 <section id="section-1" class="slide level2" data-background-color="black" data-background-image="./images/Git-PUSH-pULL-1280x640.png" data-background-size="contain" data-background-repeat="none" data-background-opacity="1" data-transition="none" data-background-transition="zoom" data-transition-speed="slow">
 <h2></h2>
 </section>
-<section id="other-things" class="slide level2">
-<h2>Other Things</h2>
+<section id="other-services-in-github" class="slide level2">
+<h2>Other Services in Github</h2>
 <div>
 <ul>
+<li>Github Pages
+<ul>
 <li>Static Web Hosting</li>
-<li>Github Actions</li>
-<li>Github Copilot <br> <span class="math inline">\(\vdots\)</span></li>
+</ul></li>
+<li>Github Actions
+<ul>
+<li>Automation service</li>
+</ul></li>
+<li>Github Copilot
+<ul>
+<li>Code completion assisted by AI(GPT-3) <br> <span class="math inline">\(\vdots\)</span></li>
+</ul></li>
 </ul>
 </div>
 </section>
@@ -616,13 +656,28 @@
 <section id="마크다운-기본-문법" class="slide level2">
 <h2>마크다운 기본 문법</h2>
 <div>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
 <p><a href="https://quarto.org/docs/authoring/markdown-basics.html">기본 문법</a></p>
+</div>
+</div>
+</div>
 <ul>
 <li>모든 마크다운 문법이 동일하지는 않다.
 <ul>
-<li>Github-flavored markdown, Kramdown 등등</li>
+<li><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Github-flavored markdown</a>, Kramdown 등등</li>
 </ul></li>
-<li>기본 문법은 동일하니 기본적인 부분을 파악해두면 된다.</li>
+<li>기본 문법은 동일하니 기본적인 부분을 파악해두면 된다.
+<ul>
+<li>서비스 별로 특화된 부분은 개별적으로 활용하면 됨</li>
+</ul></li>
 </ul>
 </div>
 </section>
@@ -668,6 +723,37 @@
 </ul>
 </div>
 </section>
+<section id="pros-cons" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div>
+<ul>
+<li>장점
+<ul>
+<li>플랫폼 종속성 최소화</li>
+<li>깔끔하게 공간을 꾸밀 수 있다.</li>
+<li><span class="math inline">\(\rm \LaTeX\)</span> 친화적</li>
+<li>(암묵적) 비용이 들지 않는다.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div>
+<ul>
+<li>단점
+<ul>
+<li>WYSIWYM을 활용할 수 있다.<br>
+</li>
+<li>진입 장벽</li>
+<li>디자인 요소가 부족하다.</li>
+<li>전달/전파가 용이하다.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 <section id="section-3" class="slide level2 center" data-background-color="white" data-background-image="./images/github-pages-workflow.png" data-background-size="contain" data-background-repeat="center" data-background-opacity="1">
 <h2></h2>
 </section>
@@ -686,8 +772,11 @@
 <h2>연습: 준비물</h2>
 <div>
 <ul>
-<li>Quarto</li>
-<li>VS Code -Quarto Extension</li>
+<li><code>Quarto</code></li>
+<li><code>VS Code</code>
+<ul>
+<li>Quarto Extension</li>
+</ul></li>
 </ul>
 </div>
 </section>
