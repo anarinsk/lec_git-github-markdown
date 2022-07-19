@@ -50,8 +50,10 @@ format:
 
 ## 좀 더 욕심을 내보자면...
 
+:::{.nonincremental}
 - Github 위에 블로그 만들기 
 - 코드가 가미된 Markdown 문서 만들어보기 
+:::
 
 ## 좀 더 욕심을 내보자면...{background-color="black" background-image="https://image.edaily.co.kr/images/photo/files/NP/S/2020/10/PS20101900203.jpg" background-size="cover" background-repeat="none" background-opacity="0.3" transition="none" background-transition="zoom" transition-speed="slow"}
 
@@ -91,21 +93,24 @@ format:
 
 ::::
 
-## Git이란{background-color="black" background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" background-size="cover" background-repeat="center" background-opacity="0.5" class="center"}
+## Git이란{background-color="black" background-image="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" background-size="cover" background-repeat="center" background-opacity="0.2" class="center"}
 
+:::{.nonincremental}
 - 한마디로 말하면 VCS이다. 
+  - Version Control System 
 - 누가 무엇을 언제 바꾸었는지를 일목요연하게 기록한다. 
 - 필요한 시점으로 언제든 돌아갈 수 있다. 
+:::
 
 ## 잠깐! 
 
 :::{.nonincremental}
 - 우리는 지금 git을 본격적으로 배우는 것이 아니다! 
-- 따라서 앞으로 1인 사용자만을 가정한다. 
-- 1인일 때도 효과적인가? 
-  - 나는 내가 어제 뭐했는지도 정확하게 기억하지 못한다. 
+  - 따라서 앞으로 1인 사용자만을 가정한다. 
+- 1인일 때도 쓸모가 있을까? 
+  - 나는 어제 뭐했는지도 정확하게 기억하지 못한다... 
   - git을 쓰면 나의 이런 멍청함이 보완된다! 
-- 웹하드와 유사하기도?  
+- 웹하드와 유사한 것일까?  
   - 단 일반적인 용도의 웹하드와 다르다! 
   - 코드/문서를 관리하고 정리하는 용도
   - 기기 간 이동 작업에 편리 
@@ -136,8 +141,10 @@ format:
 
 ## 연습: 준비물 
 
+:::{.nonincremental}
 - Git (for Windows)
 - Github Desktop (계정 만들어 둘 것)
+:::
 
 ## Git 폴더 만들기 
 
@@ -165,10 +172,10 @@ format:
 
 :::{.nonincremental}
 
-- Add는 커밋할 상태로 파일을 올려두는 것을 의미합니다. 
-- Commit은 (임시) 저장이라고 이해하면 편합니다. 
-- Commit을 해두면 그 이전 상태로 언제든지 돌아갈 수 있습니다. 
-  - 단, Desktop 앱을 통해서는 아닙니다... 
+- `Add`는 커밋할 상태로 파일을 올려두는 것을 의미합니다. 
+- `Commit`은 (임시) 저장이라고 이해하면 편합니다. 
+- `Commit`을 해두면 그 이전 상태로 언제든지 돌아갈 수 있습니다. 
+  - 단, Github Desktop 앱을 통해서는 아닙니다... 
   - 터미널 혹은 [SourceTree](https://www.sourcetreeapp.com)를 쓰면 자유롭게 활용할 수 있습니다. 
 
 :::
@@ -180,6 +187,10 @@ format:
 - [subicura/git](https://subicura.com/git/guide/#git%E1%84%8B%E1%85%B4-%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%B7)
 - <https://opentutorials.org/course/2708>
 :::
+
+## Branch 
+
+![](./images/branch-example.png){.absolute top=100 left=100 width=800 height=550 style="background:#FFFFFF;"}
 
 ## Git과 Github의 역할  
 
@@ -196,14 +207,14 @@ format:
 <https://github.com>
 
 - 작업한 내용을 온라인을 통해 동기화 
-  - 원격저장소 
+  - 원격 저장소 
 - 서로 다른 기기로 작업할 때 유용 
   - PC1 작업 &rarr; Git Push  &rarr; PC2 Git Pull  &rarr; 작업 &rarr; Git Push  &rarr;  $\cdots$
 - 여러 명이 협업할 때도 유용 
   - Branch 그리고 Pull Request의 개념이 필요하다. 
 :::
 
-## {background-color="black" background-image="./images/Git-PUSH-pULL-1280x640.png" background-size="cover" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
+## {background-color="black" background-image="./images/Git-PUSH-pULL-1280x640.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
 
 ## Other Things 
 
@@ -214,6 +225,10 @@ format:
 <br>
 $\vdots$
 :::
+
+## {background-color="black" background-image="./images/git_procedure_V2.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
+
+
 
 # Markdown 
 
@@ -273,7 +288,7 @@ $\vdots$
 
 :::
 
-## {background-color="white" background-image="./images/github-pages-workflow.png" background-size="cover" background-repeat="center" background-opacity="1" class="center"}
+## {background-color="white" background-image="./images/github-pages-workflow.png" background-size="contain" background-repeat="center" background-opacity="1" class="center"}
 
 ## 무엇을 할 수 있나? 
 
@@ -286,17 +301,23 @@ $\vdots$
 
 ## 연습: 준비물
 
+:::{.nonincremental}
 - Quarto 
 - VS Code 
   -Quarto Extension 
+:::
 
-## Git 폴더 만들기 
-
-- Github Pages를 활용할 예정이기 때문에 Github Desktop 앱으로 만들자. 
 
 ## Step by Step 
 
+:::{.nonincremental}
+- Github Pages를 활용할 예정
+- Github Desktop 앱으로 적당한 Git 폴더 생성
+
 <https://quarto.org/docs/websites/website-blog.html>
+:::
+
+
 
 
 
