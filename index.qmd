@@ -252,7 +252,7 @@ $\vdots$
 
 :::
 
-## {background-color="black" background-image="https://4.bp.blogspot.com/-CHhUJAH_ZxU/Wg6xzplcR7I/AAAAAAAAABQ/lNcOF66zpVAyp9mmJbZp3wiCuibD-dt6ACEwYBhgL/s640/git_procedure_v2.png" background-size="cover" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
+## {background-color="black" background-image="https://4.bp.blogspot.com/-CHhUJAH_ZxU/Wg6xzplcR7I/AAAAAAAAABQ/lNcOF66zpVAyp9mmJbZp3wiCuibD-dt6ACEwYBhgL/s640/git_procedure_v2.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
 
 
 # Markdown 
