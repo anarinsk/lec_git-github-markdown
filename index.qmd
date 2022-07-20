@@ -286,9 +286,9 @@ $\vdots$
 ## 연습: 준비물 
 
 :::{.nonincremental}
-- VS Code 
+- `VS Code` 
   - "Makrdown All in One" 확장 설치 
-- <https://stackedit.io/app#>
+- `StackEdit` <https://stackedit.io/app#>
 :::
 
 # Github Pages + Markdown 
