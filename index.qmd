@@ -202,6 +202,7 @@ format:
 ## 깃 (더) 배우기 
 
 :::{.nonincremental}
+- <https://git-scm.com/book/ko/v2>
 - <https://backlog.com/git-tutorial/kr>
 - [subicura/git](https://subicura.com/git/guide/#git%E1%84%8B%E1%85%B4-%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%B7)
 - <https://opentutorials.org/course/2708>
@@ -209,7 +210,13 @@ format:
 
 ## Branch 
 
-![](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png){.absolute top=100 left=100 width=800 height=500 style="background:#FFFFFF;"}
+![](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png){.absolute top=180 left=100 width=800 height=400 style="background:#FFFFFF;"}
+
+## Git의 꽃{background-color="black" background-image="https://i.imgur.com/hlt8M5c.gif" background-size="cover" background-repeat="center" background-opacity="0.2" class="center"}
+
+다만 지금은 자세히 다루지 않습니다... 
+
+<https://learngitbranching.js.org/?locale=ko>
 
 ## Git과 Github의 역할  
 

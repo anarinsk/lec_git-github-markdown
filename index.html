@@ -7,7 +7,7 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.28">
+  <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Junsok Huhh">
   <meta name="dcterms.date" content="2022-07-29">
@@ -561,6 +561,7 @@
 <h2>깃 (더) 배우기</h2>
 <div>
 <ul>
+<li><a href="https://git-scm.com/book/ko/v2" class="uri">https://git-scm.com/book/ko/v2</a></li>
 <li><a href="https://backlog.com/git-tutorial/kr" class="uri">https://backlog.com/git-tutorial/kr</a></li>
 <li><a href="https://subicura.com/git/guide/#git%E1%84%8B%E1%85%B4-%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%B7">subicura/git</a></li>
 <li><a href="https://opentutorials.org/course/2708" class="uri">https://opentutorials.org/course/2708</a></li>
@@ -569,7 +570,12 @@
 </section>
 <section id="branch" class="slide level2">
 <h2>Branch</h2>
-<p><img data-src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png" class="absolute" style="background:#FFFFFF;top: 100px; left: 100px; width: 800px; height: 500px; "></p>
+<p><img data-src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png" class="absolute" style="background:#FFFFFF;top: 180px; left: 100px; width: 800px; height: 400px; "></p>
+</section>
+<section id="git의-꽃" class="slide level2 center" data-background-color="black" data-background-image="https://i.imgur.com/hlt8M5c.gif" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.2">
+<h2>Git의 꽃</h2>
+<p>다만 지금은 자세히 다루지 않습니다…</p>
+<p><a href="https://learngitbranching.js.org/?locale=ko" class="uri">https://learngitbranching.js.org/?locale=ko</a></p>
 </section>
 <section id="git과-github의-역할" class="slide level2">
 <h2>Git과 Github의 역할</h2>
@@ -1020,10 +1026,7 @@
         }
       }
       const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
+        toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
       }
       toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
