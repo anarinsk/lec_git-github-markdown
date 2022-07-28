@@ -7,7 +7,7 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.36">
+  <meta name="generator" content="quarto-1.0.37">
 
   <meta name="author" content="Junsok Huhh">
   <meta name="dcterms.date" content="2022-07-29">
@@ -609,9 +609,10 @@
 <li>Branch, Pull Request, Fork 등의 개념이 필요</li>
 <li>익숙하지 않을 뿐 그렇게 어려운 개념은 아닙니다.</li>
 </ul></li>
-<li>2018년 마이크로소프트에서 인수
+<li>2018년 마이크로소프트가 인수
 <ul>
 <li>개인 및 소규모 개발사의 기본적인 기능은 무료</li>
+<li>Github 인수에는 이 분들의 큰 뜻이 숨어 있습니다…</li>
 </ul></li>
 </ul>
 </div>
@@ -792,11 +793,26 @@
 <h2>Step by Step</h2>
 <div>
 <ul>
-<li>Github Pages를 활용할 예정</li>
-<li>Github Desktop 앱으로 적당한 Git 폴더 생성</li>
+<li>로컬 생성 웹 페이지 생성; Quarto</li>
+<li>스태틱 웹 호스팅; Github Pages</li>
+<li>로컬 웹 페이지 조회; 웹 브라우저 (PC, Mobile)</li>
 </ul>
-<p><a href="https://quarto.org/docs/websites/website-blog.html" class="uri">https://quarto.org/docs/websites/website-blog.html</a></p>
 </div>
+</section>
+<section id="localdevloper" class="slide level2 center" data-background-color="gray" data-background-image="./images/github-pages-workflow-local-from.png" data-background-size="contain" data-background-repeat="center" data-background-opacity="0.2">
+<h2>Local(Devloper)</h2>
+<p>홈페이지 제작자의 컴퓨터에서 웹 페이지를 제작한다. <a href="https://quarto.org/docs/websites/website-blog.html" class="uri">https://quarto.org/docs/websites/website-blog.html</a></p>
+</section>
+<section id="github" class="slide level2 center" data-background-color="gray" data-background-image="./images/github-pages-workflow-github.png" data-background-size="contain" data-background-repeat="center" data-background-opacity="0.2">
+<h2>Github</h2>
+<p>제작된 페이지를 Github에 올리고 Pages 설정을 완료한다. <a href="https://quarto.org/docs/publishing/github-pages.html" class="uri">https://quarto.org/docs/publishing/github-pages.html</a></p>
+</section>
+<section id="localusers" class="slide level2 center" data-background-color="gray" data-background-image="./images/github-pages-workflow-local-to.png" data-background-size="contain" data-background-repeat="center" data-background-opacity="0.2">
+<h2>Local(Users)</h2>
+<p>호스팅된 페이지를 조회한다!</p>
+</section>
+<section id="section-4" class="slide level2 center" data-background-color="black" data-background-image="https://i.gifer.com/J69y.gif" data-background-size="cover" data-background-repeat="center" data-background-opacity="0.5">
+<h2></h2>
 <div class="footer footer-default">
 <p>KNU Summer Special Tutorial</p>
 </div>
@@ -1026,7 +1042,10 @@
         }
       }
       const toggleBodyColorPrimary = () => {
-        toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
       }
       toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
