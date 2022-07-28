@@ -255,7 +255,7 @@ format:
 - Github Actions 
   - 자동화 서비스 
 - Github Copilot 
-  - AI(GPT-3) 기반 코드 작성 보고 
+  - AI(GPT-3) 기반 코드 작성 보조 서비스
 <br>
 $\vdots$
 
