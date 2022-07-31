@@ -239,8 +239,9 @@ format:
 - 다인용; 프로젝트의 일관성 유지 및 관리  
   - Branch, Pull Request, Fork 등의 개념이 필요 
   - 익숙하지 않을 뿐 그렇게 어려운 개념은 아닙니다. 
-- 2018년 마이크로소프트에서 인수 
+- 2018년 마이크로소프트가 인수 
   - 개인 및 소규모 개발사의 기본적인 기능은 무료 
+  - Github 인수에는 이 분들의 큰 뜻이 숨어 있습니다... 
 :::
 
 ## {background-color="black" background-image="./images/Git-PUSH-pULL-1280x640.png" background-size="contain" background-repeat="none" background-opacity="1" transition="none" background-transition="zoom" transition-speed="slow"}
@@ -254,7 +255,7 @@ format:
 - Github Actions 
   - 자동화 서비스 
 - Github Copilot 
-  - AI(GPT-3) 기반 코드 작성 보고 
+  - AI(GPT-3) 기반 코드 작성 보조 서비스
 <br>
 $\vdots$
 
@@ -373,12 +374,27 @@ $\vdots$
 ## Step by Step 
 
 :::{.nonincremental}
-- Github Pages를 활용할 예정
-- Github Desktop 앱으로 적당한 Git 폴더 생성
-
-<https://quarto.org/docs/websites/website-blog.html>
+- 로컬 생성 웹 페이지 생성; Quarto
+- 스태틱 웹 호스팅; Github Pages
+- 로컬 웹 페이지 조회; 웹 브라우저 (PC, Mobile)
 :::
 
+## Local(Devloper){background-color="gray" background-image="./images/github-pages-workflow-local-from.png" background-size="contain" background-repeat="center" background-opacity="0.2" class="center"}
+
+홈페이지 제작자의 컴퓨터에서 웹 페이지를 제작한다. 
+<https://quarto.org/docs/websites/website-blog.html>
+
+
+## Github{background-color="gray" background-image="./images/github-pages-workflow-github.png" background-size="contain" background-repeat="center" background-opacity="0.2" class="center"}
+
+제작된 페이지를 Github에 올리고 Pages 설정을 완료한다. 
+<https://quarto.org/docs/publishing/github-pages.html>
+
+## Local(Users){background-color="gray" background-image="./images/github-pages-workflow-local-to.png" background-size="contain" background-repeat="center" background-opacity="0.2" class="center"}
+
+호스팅된 페이지를 조회한다!
+
+## {background-color="black" background-image="https://i.gifer.com/J69y.gif" background-size="cover" background-repeat="center" background-opacity="0.5" class="center"}
 
 
 
